@@ -1,0 +1,96 @@
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(imagenes/pyke.jpg);
+    background-size: cover;
+    gap: 20px;
+    border-radius: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-items: center;
+    overflow: hidden;
+    padding-top: 20px; 
+}
+
+
+.container::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    width: 100%;
+    height: calc(120% - 1px); 
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 0;
+}
+
+
+
+.container div{
+    position: relative;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border-width: 0px;
+    border-style: double;
+    z-index: 1;
+
+
+}   
+
+.container div:hover{
+    border: 1px solid rgb(255, 255, 238);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+body{
+    background-color: black;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    z-index: 2;
+    
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+.container-titulo{
+    background-color:rgb(28, 28, 34);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 1px;
+    z-index: 2;
+}
+
+.contenedor-texto{
+margin-left: 100px;
+margin-right: 100px;
+}
+
+
+p{
+    color: rgb(223, 223, 223);
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    justify-content: baseline;
+    font-size: 20px;
+    line-height: 29px;
+    hyphens: auto   ;
+}
+
